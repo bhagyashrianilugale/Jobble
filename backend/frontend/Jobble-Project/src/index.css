@@ -1,0 +1,421 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgba(211, 234, 242, 1);
+  }
+
+/*Home component*/
+.home{
+  margin: 40px auto;
+  height: 80vh;
+  width: 80%;
+  background-color: rgba(255,255,255,1);
+  
+}
+.search-control{
+  display: flex;
+  height: 40px;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+.search-btn{
+  background-color: rgba(58,133,190,255);
+  border: none;
+  width: 100px;
+  margin-left: 2px;
+  color:rgba(255,255, 255, 1);
+}
+
+.search-control :hover{
+  border: 2px solid rgba(1,1,1,0.4);
+}
+
+.main-text{
+  color: rgba(58,133,190,255);
+  font-weight: 1000;
+  margin-right: 400px;
+}
+
+.navbar{
+   height: 45px;
+   display: flex;
+   color: rgb(88, 88, 90);
+   align-items: center;
+   flex-direction: row;
+   justify-content: flex-end;
+   padding: 10px;
+}
+
+.navbar a{
+   color:rgba(255,255, 255, 1);
+   text-decoration: none;
+   border: none;
+}
+
+.nav-btn{
+  background-color:  rgba(58,133,190,255);
+  margin-left: 8px;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+}
+
+
+.btn{
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: rgba(54,134,192,255);
+  color:rgba(255,255, 255, 1);
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.apply-btn{
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+  background-color: rgba(255,255, 255, 1);
+  color:rgba(54,134,192,255);
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn a{
+   color:rgba(255,255, 255, 1);
+   text-decoration: none;
+   border: none;
+}
+
+.main-content{
+  height: 400px;
+  width: 900px;
+  margin: 0px auto;
+  display: flex;
+}
+
+.content{
+  height: 250px;
+  width: 450px;
+}
+
+.content span{
+  color: rgba(58,133,190,255);
+}
+
+.main-img{
+  background-image: url("./assets/img_5.jpg");
+  height:350px;
+  width: 260px;
+}
+
+
+/*Job-Litings component*/
+
+.job-listings-container{
+  position: sticky;
+  width: 100%;
+  background-color: rgba(255,255,255,1);
+  
+}
+
+.job-listings-container h2{
+  text-align: center;
+  color:  #333;
+}
+
+.job-listings{
+  text-align: start; 
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  gap: 30px; 
+}
+
+.job-listing{
+  border: 1px solid #ddd;
+  padding: 16px; 
+  background-color: rgba(211, 234, 242, 1);
+  color:  #333;
+  margin: 0px 5px 0px 5px;
+}
+
+.job-listing a{
+  text-decoration: none;
+}
+
+/*jobDetails components*/
+
+.jobListing-Details{
+  height: 400px;
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  background-color: rgba(58,133,190,255);
+  padding: 30px;
+  color: white;
+}
+
+.jobdetails-component-img{
+  height: 300px;
+  margin: 0 auto;
+  width: 40%;
+  background-image: url("./assets/jobdetailsimg.jpg");
+  background-size: cover;
+}
+
+
+/*jobNew component */
+/*All Form styling*/
+.signup-page-img{
+  height: 300px;
+  margin: 0 auto;
+  width: 40%;
+  background-image: url("./assets/signupimg.jpg");
+  background-size: cover;
+}
+
+.employer-page-img{
+  height: 300px;
+  margin: 0 auto;
+  width: 40%;
+  background-image: url("./assets/employerimg.jpg");
+  background-size: cover;
+}
+
+.candidate-page-img{
+  height: 300px;
+  margin: 0 auto;
+  width: 40%;
+  background-image: url("./assets/candidateimg.jpg");
+  background-size: cover;
+}
+
+.jobnew-page-img{
+  height: 300px;
+  margin: 0 auto;
+  width: 50%;
+  background-image: url("./assets/img_1-Photo.jpg.png");
+  background-size: cover;
+}
+
+.application-page-img{
+  height: 300px;
+  margin: 0 auto;
+  width: 50%;
+  background-image: url("./assets/img_1-Photo.jpg.png");
+  background-size: cover;
+}
+
+.outer-container{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.outer-container-content{
+  padding: 40px;
+  background-color: rgba(58,133,190,255);
+  width: 100%;
+
+}
+
+.outer-container-content p,h2{
+  text-align: start;
+  color: rgba(254,255,250,255);
+}
+
+
+.form-container {
+  width: 100%;
+  padding: 40px;
+  background-color: aliceblue;
+}
+
+.form-container select{
+  height: 30px;
+  border: 2px solid  rgb(215, 214, 214);
+  margin-bottom: 10px;
+}
+
+.form-container h2{
+  color: rgba(58,133,190,255);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.7);
+}
+
+.password-container{
+  display: flex;
+}
+
+input, textarea {
+  
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 2px solid  rgb(215, 214, 214);
+  box-sizing: border-box;
+}
+
+/*Update JoListing component styling*/
+
+footer{
+  height: 200px;
+  width: 100%;
+  background-color: red;
+  position: fixed;
+}
+
+
+/* Media Query for Tablets */
+@media only screen and (max-width: 768px) {
+    .home, 
+   .job-listings-container,
+   .jobListing-Details, 
+   .signup-page-img, 
+   .employer-page-img, 
+   .candidate-page-img, 
+   .jobnew-page-img, 
+   .application-page-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .main-text {
+    margin-right: 5px;
+  }
+
+  .outer-container-content,
+  .form-container {
+    padding: 20px;
+  }
+
+  .search-control {
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 40px;
+  }
+
+  .search-btn {
+      background-color: rgba(58,133,190,255);
+      border: none;
+      width: 100px;
+      margin-left: 2px;
+      color:rgba(255,255, 255, 1);
+ }
+
+  .navbar {
+    height: 20px;
+    display: flex;
+    color: rgb(88, 88, 90);
+    padding: 4px;
+  }
+  .home {
+    width: 80%;
+    height: 100%;
+    font-size: small;
+    padding: 20px;
+  }
+
+  .main-img{
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+ }
+
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 480px) {
+ 
+  .home {
+    width: 100%;
+    height: 100%;
+    font-size: small;
+    padding: 20px;
+    margin: 10px 30px 10px 30px;
+  }
+
+  .navbar {
+    height: 10px;
+    padding: 2px;
+    font-size: smaller;
+  }
+
+  .main-img{
+    width: 40%;
+    height: 200px;
+    padding: 5px;
+    visibility: hidden;
+ }
+
+ .main-text{
+  font-size: medium;
+
+ }
+ 
+.content {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  .search-control {
+    height: 30px;
+    border-radius: 2px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .search-btn {
+     width: 60px;
+      height: 40px;
+      color:rgba(255,255, 255, 1);
+ }
+
+  .outer-container-content,
+  .form-container {
+    padding: 10px;
+  }
+
+  .job-listings {
+    grid-template-columns: 1fr;
+    background-color: aliceblue;
+  }
+
+  .job-listing{
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+  .jobdetails-component-img{
+    width: 100%;
+    height: 200px;
+  }
+  .jobListing-Details{
+     height: 100%;
+     width: 80%;
+  }
+}
+
+
+
+
